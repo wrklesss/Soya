@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c363f;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 200px;
+    margin-left: -285px;
+}
+
+.auth-buttons button {
+    background-color: transparent;
+    color: #c4c8af;
+    border: 1px solid #c4c8af;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #c4c8af;
+    color: #2c2f36;
+}
+
+main .hero {
+    background-color: #2c363f;
+    color: white;
+    padding: 90px 0;
+}
+
+.hero .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #c4c8af;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-group {
+    flex: 1 1 150px;
+    max-width: 200px;
+}
+
+.input-group input,
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-button {
+    background-color: #c4c8af;
+    color: #2c2f36;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #2c2f36;
+    color: #c4c8af;
+}
+
+.work-checkbox {
+    margin-bottom: 20px;
+}
+
+.promo {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.promo h2 {
+    margin-bottom: 10px;
+}
+
+.promo p {
+    margin-bottom: 10px;
+}
+
+.promo a {
+    color: #6a9c66;
+    text-decoration: none;
+    font-weight: bold;
+}
