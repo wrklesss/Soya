@@ -30,52 +30,79 @@
                         exceptionnelle.
                     </p>
                 </div>
-                <div class="search-container">
-                    <div class="search-form">
-                        <div class="input-group">
-                            <input
-                                type="text"
-                                placeholder="Où allez vous ?"
-                                id="destination"
-                            />
-                        </div>
-                        <div class="input-group">
-                            <input type="date" id="arrival" />
-                        </div>
-                        <div class="input-group">
-                            <input type="date" id="departure" />
-                        </div>
-                        <div class="input-group">
-                            <input
-                                type="text"
-                                placeholder="Qui Voyage ?"
-                                id="travellers"
-                            />
-                        </div>
-                        <div class="input-group">
-                            <button id="search-button">Rechercher</button>
-                            
-                        </div>
-                    </div>
-                    
-                    </div>
-                </div>
-                
-                <!-- <div class="container">
-                    <div class="promo">
-                        <h2>Profitez de Nos Offres Exclusives</h2>
-                        <p>
-                            Chez Soya, nous aimons gâter nos clients avec des
-                            réductions et des offres spéciales tout au long de
-                            l'année. Ne manquez pas nos promotions
-                            exceptionnelles pour rendre votre séjour encore plus
-                            agréable.
-                        </p>
-                        <a href="#">Voir les détails sur la promotion</a>
-                    </div> -->
-                </div>
             </section>
+            <div class="search-container">
+                <div class="search-form">
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            placeholder="Où allez vous ?"
+                            id="destination"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="arrival" />
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="departure" />
+                    </div>
+                    <div class="input-group">
+                        <button id="travellers">Qui Voyage ?</button>
+                    </div>
+                    <div class="input-group">
+                        <button id="search-button">Rechercher</button>
+                    </div>
+                </div>
+            </div>
+            <div class="counter-container hidden">
+                <div class="counter">
+                    <label for="adults">Adultes</label>
+                    <div class="counter-controls">
+                        <button class="decrement" onclick="decrement('adults')">
+                            -
+                        </button>
+                        <span id="adults">2</span>
+                        <button class="increment" onclick="increment('adults')">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <div class="counter">
+                    <label for="children">Enfants<br />De 0 à 17 ans</label>
+                    <div class="counter-controls">
+                        <button
+                            class="decrement"
+                            onclick="decrement('children')"
+                        >
+                            -
+                        </button>
+                        <span id="children">0</span>
+                        <button
+                            class="increment"
+                            onclick="increment('children')"
+                        >
+                            +
+                        </button>
+                    </div>
+                </div>
+                <div id="children-ages"></div>
+                <div class="counter">
+                    <label for="rooms">Chambres</label>
+                    <div class="counter-controls">
+                        <button class="decrement" onclick="decrement('rooms')">
+                            -
+                        </button>
+                        <span id="rooms">1</span>
+                        <button class="increment" onclick="increment('rooms')">
+                            +
+                        </button>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
         </main>
+
         <script src="scripts.js"></script>
     </body>
 </html>
